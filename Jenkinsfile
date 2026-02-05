@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Git Clone') {
+            steps {
+                echo "Cloning GitHub repo..."
+                checkout scm
+            }
+        }
+    }
+}
