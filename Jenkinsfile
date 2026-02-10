@@ -19,6 +19,9 @@ pipeline {
                 sh '''
                   kubectl apply -f deployment.yaml
                   kubectl apply -f service.yaml
+                  kubectl get deployment
+                  kubectl get pods
+                  kubectl get rs
                 '''
             }
         }
